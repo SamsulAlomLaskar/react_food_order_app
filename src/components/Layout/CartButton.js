@@ -6,6 +6,7 @@ import classes from "./CartCutton.module.css";
 
 const CartButton = (props) => {
   const cartContext = useContext(CartContext);
+  console.log(cartContext.items, "BUTTON");
 
   const numOfCartItems = cartContext.items.reduce((previousNum, item) => {
     return previousNum + item.amount;
