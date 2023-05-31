@@ -5,7 +5,6 @@ import CartContext from "../../../store/cart-context";
 
 const MealItem = ({ price, description, name, id }) => {
   const cartCntxt = useContext(CartContext);
-  console.log(cartCntxt, "MI");
   const PRICE = `₹${price.toFixed(2)}`;
 
   const addToCartHandler = (amount) => {
